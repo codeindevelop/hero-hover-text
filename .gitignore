@@ -1,0 +1,7 @@
+/node_modules
+/.cache
+package-lock.json
+yarn.lock
+yarn-error.log
+/dist
+/.parcel-cache

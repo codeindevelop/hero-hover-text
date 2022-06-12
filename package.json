@@ -1,0 +1,29 @@
+{
+  "name": "hero-hover",
+  "version": "1.0.0",
+  "description": "*How to use this template:*",
+
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html --port 3000 --open",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeindevelopment/hero-hover-text"
+  },
+  "author": "Hadi Mo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeindevelopment/hero-hover-text/issues"
+  },
+  "homepage": "https://github.com/codeindevelopment/hero-hover-text#readme",
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "lodash.throttle": "^4.1.1",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}

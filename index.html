@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Hiver | Final demo | Codeiloom</title>
+    <meta
+      name="description"
+      content="Dynamic Hero Hover made with CSS custom properties and more."
+    />
+    <meta
+      name="keywords"
+      content="css, mask, custom properties, demo, fronend"
+    />
+    <meta name="author" content="Hadi Mo for Codeiloom" />
+    
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@600&&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="demo-1">
+    <main>
+      <div class="frame">
+        <div class="frame__title-wrap">
+          <h1 class="frame__title">Hero Hover Animation</h1>
+          <nav class="frame__links">
+            <a href="https://codeindev.com">Article</a>
+            <a href="https://github.com/codeindevelopment/hero-hover-text"
+              >GitHub</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <!-- the content -->
+        <header>
+          <button class="menu-button" data-btn="menu" aria-label="menu">
+            <span class="menu-button__icon">
+              <span></span>
+            </span>
+          </button>
+          <nav class="menu" data-menu>
+            <ul>
+              <li>
+                <a href="">About me</a>
+              </li>
+              <li>
+                <a href="">Projects</a>
+              </li>
+              <li>
+                <a href="">Writing</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="wrapper">
+          <div class="hero hero--primary">
+            <div class="container">
+              <h1 class="hero__heading" data-splitting>
+                Welcome to <br />Codeiloom
+              </h1>
+            </div>
+          </div>
+
+          <div class="hero hero--secondary" aria-hidden="true" data-hero>
+            <div class="container">
+              <p class="hero__heading" data-splitting>
+                Welcome to<br />Codeiloom
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
