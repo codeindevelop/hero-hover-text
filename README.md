@@ -2,7 +2,7 @@
 
 Animating a CSS mask based on cursor position using GSAP and custom properties.
 
-![Hero section with CSS mask](https://github.com/codeiloom/hero-hover-text/hero.png)
+![Hero section with CSS mask](https://raw.githubusercontent.com/codeiloom/hero-hover-text/master/hero.png)
 
 [Article on Github](https://github.com/codeiloom/hero-hover-text)
 
