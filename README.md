@@ -6,7 +6,7 @@ Animating a CSS mask based on cursor position using GSAP and custom properties.
 
 [Article on Github](https://github.com/codeiloom/hero-hover-text)
 
-[Demo](https://heromask.codeindev.com)
+[Demo](https://hero-hover-text.vercel.app)
 
 ## Installation
 
